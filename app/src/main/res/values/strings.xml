@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">Pizza-Recipes</string>
+    <string name="app_name">Pizza Recipes</string>
+    <string-array name="arr_names">
+        <item>"Next level Margherita pizza"</item>>
+        <item>"Pizza Margherita in 4 easy steps"</item>>
+        <item>"Caramelised onion &amp; goat's cheese pizza"</item>>
+        <item>"Superhealthy pizza"</item>>
+        <item>"Frying pan pizza"</item>>
+        <item>"Egg &amp; rocket pizzas"</item>>
+        <item>"Sourdough pizza"</item>>
+        <item>"Chicken tikka masala pizzas"</item>>
+        <item>"Ultimate pizza Margherita"</item>>
+        <item>"Pizza with homemade sauce"</item>>
+    </string-array>
+    <string-array name="arr_desc_recipes">
+        <item>"Forget takeaways – you can’t beat a homemade Margherita pizza topped with fresh tomato sauce and melted cheese. Here's how to master this everyday classic....."</item>>
+        <item>"Even a novice cook can master the art of pizza with our simple step-by-step guide. Bellissimo"</item>>
+        <item>"Make a veggie pizza that's healthy and low-fat instead of ordering a takeaway. This easy recipe uses goat's cheese for tang while the onions give it sweetness..."</item>>
+        <item>"The quantities for this are generous, so if you have any leftovers, pop a wedge of cold pizza into your lunchbox the next day"</item>>
+        <item>"Not good for you? Think again, this easy to make pizza is low fat and full of calcium"</item>>
+        <item>"Use seeded tortillas as pizza bases for a quick and healthy lunch - crack an egg in the centre and bake to boost protein intake"</item>>
+        <item>"Make homemade sourdough pizza with a wonderfully chewy crust. Try our margherita recipe, then customise with your favourite toppings"</item>>
+        <item>"Rustle up our spiced chicken pizzas using naan bread in just 20 minutes. To balance the heat, serve them with dollops of mango chutney and natural yogurt"</item>>
+        <item>"Take your senses on a trip to Italy with this authentic pizza Margherita"</item>>
+        <item>"Make pizza for the family with a homemade base and tomato sauce. The recipe is perfect to get kids involved in cooking. Top with mozzarella and fresh basil"</item>>
+    </string-array>
 </resources>
