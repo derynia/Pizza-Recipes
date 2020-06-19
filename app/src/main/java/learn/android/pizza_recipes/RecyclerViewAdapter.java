@@ -1,7 +1,6 @@
 package learn.android.pizza_recipes;
 
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import static androidx.core.content.ContextCompat.createDeviceProtectedStorageContext;
 import static androidx.core.content.ContextCompat.startActivity;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewViewHolder> {
@@ -36,6 +36,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         }
     }
 
+
     public RecyclerViewAdapter(ArrayList<RecyclerViewItem> arrayList) {
         this.arrayList = arrayList;
     }
@@ -56,11 +57,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.imageViewPizzaPic.setImageResource(recyclerViewItem.getImageResource());
         holder.textViewPizzaName.setText(recyclerViewItem.getTextName());
         holder.textViewPizzaDesc.setText(recyclerViewItem.getTextDesc());
+        holder.cardView.setId(position);
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i("click", "" + position);
+                MainActivity context = (MainActivity) v.getContext();
+                Intent recypeIntent = new Intent(context, RecypeActivity.class);
+                recypeIntent.putExtra("ID", position);
+                context.startActivity(recypeIntent);
+
+                //Toast.makeText(v.getContext(), "" + v.getId(), Toast.LENGTH_SHORT).show();
             }
         });
     }

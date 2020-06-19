@@ -1,6 +1,8 @@
 package learn.android.pizza_recipes;
 
-public class RecyclerViewItem {
+import java.io.Serializable;
+
+public class RecyclerViewItem  implements Serializable  {
     private int imageResource;
     private String textName;
     private String textDesc;
@@ -22,4 +24,5 @@ public class RecyclerViewItem {
     public String getTextDesc() {
         return textDesc;
     }
+
 }

@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".RecypeActivity"
+    android:scrollbars="vertical">
 
     <ImageView
         android:id="@+id/imageViewBigPic"
@@ -20,5 +22,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="5dp"
-        android:text="some text" />
+        android:text="some text"
+        android:scrollbars="vertical"/>
 </LinearLayout>
